@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 909 1286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<clipPath id="c0_4"><path d="M76.1 1210.2V76.1H833.4V1210.2Z"/></clipPath>
+<style type="text/css"><![CDATA[
+.g0_4{
+fill: none;
+stroke: #00F;
+stroke-width: 1.528;
+stroke-linecap: square;
+stroke-miterlimit: 10;
+}
+]]></style>
+</defs>
+<path clip-path="url(#c0_4)" d="M76.4 248.2h77.9Zm0 22.9H203.3Zm29 23H244.5Zm0 22.9H220.1Zm0 22.9h90.2Zm0 22.9H256.8Zm0 22.9H259.8Zm0 22.9H273.6Zm0 22.9H327.1Zm0 23H287.3Zm0 22.9h91.8Zm0 22.9H301.1Zm-29 22.9H252.2Zm29 22.9H269Zm0 22.9h159Zm0 22.9H337.8Zm0 23H285.8Zm0 22.9h50.5Zm0 22.9H255.2Zm0 22.9H241.5Zm0 22.9H246.1Zm0 22.9H256.8Zm0 22.9H220.1Zm0 22.9H359.2Zm0 23H298Zm-29 22.9H243Zm29 22.9H284.3Zm0 22.9H249.1Zm0 22.9H223.1Zm0 22.9H214Zm0 22.9H214Zm0 23h91.8Zm0 22.9H304.2Zm0 22.9H350Zm0 22.9h68.8Zm0 22.9H206.3Zm-29 22.9H210.9Zm29 22.9H218.6Zm0 23H250.7Zm0 22.9H262.9Zm0 22.9h211Zm0 22.9H246.1Z" class="g0_4"/>
+</svg>
