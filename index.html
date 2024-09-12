@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB CỦA TUIII 🍁</title>
+    <title>SÁCH MÊ 📚</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,46 @@
 </head>
 
 <body>
+    <style>
+        #codepro-ads-left {
+            bottom: 24px;
+            left: 10px;
+            position: fixed;
+        }
+
+        #codepro_ads_right {
+            bottom: 24px;
+            right: 10px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            /* Xếp các phần tử theo cột */
+            gap: 10px;
+            /* Khoảng cách giữa các hình ảnh */
+        }
+
+        @media(max-width: 1024px) {
+            .codepro-ads-all {
+                display: none !important;
+            }
+        }
+    </style>
+
+    <div class='codepro-ads-all'>
+        <div id='codepro-ads-left'>
+            <a href="https://lapvip.vn/sale/khuyen-mai?utm_source=Admicro_AdX&utm_campaign=AdX&utm_content=www.vietjack.com&cpa_tid=01J7JHBR1RB152Z9JGJM338B98&_tp=11&tpn=4&dmn=www.vietjack.com"
+                target="_blank"><img src="./ads/3.png" alt="Quảng Cáo Fake" width="260px"></a>
+        </div>
+        <div id='codepro_ads_right'>
+            <a href="https://laptopworld.vn/asus-expertbook-laptop-doanh-nghiep-ban-chay-2022.html" target="_blank"><img
+                    src="./ads/1702_2.png" alt="Quảng Cáo Fake" width="260px"></a>
+            <!-- ------------------------------------------------------------------------ -->
+            <a href="https://www.facebook.com/story.php/?story_fbid=851713807096762&id=100067744503228&paipv=0&eav=AfYViHWx9cuuA3UYZ_LpYUKdhWbytlR1m9C6Lqk8owqmlzgTJgYEn2RNs7F9l5NvNVY&_rdr"
+                target="_blank"><img src="./ads/2.jpg" alt="Quảng Cáo Fake" width="260px"></a>
+        </div>
+    </div>
+
+
     <script src="https://app.tudongchat.com/js/chatbox.js"></script>
     <script>
         const tudong_chatbox = new TuDongChat('mqQ1F_-6sVCznyLoLPEAD')
@@ -47,20 +87,30 @@
     </div>
     <div id="warpper">
         <div id="header">
-            <h1>Xin Chào ! 🍁</h1>
-            <h4>Chào mừng bạn đã đến trang web cùi mía của tuiii !</h4>
+            <h1>Xin Chào ! </h1>
+            <h4>Chào mừng bạn đã đến với sách mê 📖</h4>
         </div>
         <div id="bar">
             <ul>
                 <li><a href="./index.html">Trang Chủ</a></li>
-                <li><a href="./phanmem.html">Thể Loại</a></li>
+                <li class="dropdown">
+                    <a href="./theloai.html" class="dropbtn">Thể Loại</a>
+                    <div class="dropdown-content">
+                        <a href="#">Sách Văn Học</a>
+                        <a href="#">Sách Kinh Tế</a>
+                        <a href="#">Sách Khoa Học</a>
+                        <a href="#">Sách Thiếu Nhi</a>
+                        <a href="#">Sách Kỹ Năng Sống</a>
+                    </div>
+                </li>
                 <li><a href="./thongtin.html">Thông Tin</a></li>
             </ul>
         </div>
 
+
         <div id="main-content">
             <div id="content">
-                <h3 style="padding-bottom: 5px; padding-left: 30px;">Sách hay nhất<a href=""
+                <h3 style="padding-bottom: 5px; padding-left: 30px;">Sách nước ngoài<a href=""
                         style="padding-left: 400px;">Xem Thêm
                     </a></h3>
                 <hr style="padding-bottom: 5px;" color="red">
@@ -105,6 +155,12 @@
                         </a>
                         <a href="BaiDang/tdnvc/tdnvc.html" class="read-button">Đọc Ngay</a>
                     </div>
+                    <div class="book-item">
+                        <a href="BaiDang/ccdc/ccdc.html">
+                            <img src="./BaiDang/ccdc/ccdc.jpg" alt="Chú Chó Đợi Chờ" title="Chú Chó Đợi Chờ">
+                        </a>
+                        <a href="BaiDang/ccdc/ccdc.html" class="read-button">Đọc Ngay</a>
+                    </div>
                 </div>
 
                 <h3 style="padding-bottom: 5px; padding-top: 30px; padding-left: 30px;">Sách Việt
@@ -133,19 +189,35 @@
                         <a href="BaiDang/sm/sm.html" class="read-button">Đọc Ngay</a>
                     </div>
                     <div class="book-item">
-                        <a href="BaiDang/tcts/tcts.html">
-                            <img src="https://www.sachhayonline.com/data/book-photos/40.jpg" alt="Tắt Đèn"
-                                title="Tắt Đèn">
+                        <a href="BaiDang/bc/bc.html">
+                            <img src="https://www.sachhayonline.com/data/book-photos/40.jpg" alt="Bỏ Chồng"
+                                title="Bỏ Chồng">
                         </a>
-                        <a href="BaiDang/tcts/tcts.html" class="read-button">Đọc Ngay</a>
+                        <a href="BaiDang/bc/bc.html" class="read-button">Đọc Ngay</a>
                     </div>
                     <div class="book-item">
-                        <a href="BaiDang/ntnt/ntnt.html">
-                            <img src="https://www.sachhayonline.com/data/book-photos/36.jpg" alt="Những Tấm Lòng Cao Cả"
-                                title="Những Tấm Lòng Cao Cả">
+                        <a href="BaiDang/lctscv/lctscv.html">
+                            <img src="https://www.sachhayonline.com/data/book-photos/36.jpg"
+                                alt="Lá Cờ Thêu Sáu Chữ Vàng" title="Lá Cờ Thêu Sáu Chữ Vàng">
                         </a>
-                        <a href="BaiDang/ntnt/ntnt.html" class="read-button">Đọc Ngay</a>
+                        <a href="BaiDang/lctscv/lctscv.html" class="read-button">Đọc Ngay</a>
                     </div>
+
+                    <div class="book-item">
+                        <a href="BaiDang/drpn/drpn.html">
+                            <img src="https://img.upanh.tv/2024/09/12/2a396750173a4dbf819e07d778c53827.jpg"
+                                alt="Đất Rừng Phương Nam" title="Đất Rừng Phương Nam">
+                        </a>
+                        <a href="BaiDang/drpn/drpn.html" class="read-button">Đọc Ngay</a>
+                    </div>
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>

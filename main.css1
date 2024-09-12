@@ -1,0 +1,225 @@
+html {
+    cursor: url('/DuAnLon/web/mouse/tam.png'), auto;
+    background: linear-gradient(300deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#warpper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    background: #4b6584;
+    color: #ffff;
+    padding: 30px 80px 5px;
+    text-align: left;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+
+#bar {
+    background: #2d8bff;
+    color: #ffff;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    /* Loại bỏ margin phía dưới */
+}
+
+#bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+}
+
+#bar ul li {
+    margin: 0 15px;
+}
+
+#bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: "Be Vietnam Pro", sans-serif;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#bar ul li a:hover {
+    color: #000000;
+    background-color: #fffffffb;
+}
+
+#main-content {
+    background-color: #ced6e0;
+    margin: 0;
+    padding: 20px 0;
+    /* Thêm padding phía trên và dưới */
+    padding-bottom: 60px;
+    /* Tạo khoảng trống dưới cùng trước footer */
+
+}
+
+#content {
+    flex-basis: 70%;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 200;
+    padding: 20px 50px;
+    /* Thêm padding cho phù hợp */
+    font-size: 20px;
+
+}
+
+#content.h2 {}
+
+#img {
+    width: 90%;
+    height: auto;
+}
+
+/* Mẫu bìa sách */
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    /* 4 sách mỗi hàng */
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
+    box-sizing: border-box;
+    /* Đảm bảo padding và border không làm thay đổi kích thước tổng thể */
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.read-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2d7fff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.read-button:hover {
+    background-color: #1e5ebc;
+}
+
+.footer {
+    background: #4b6584;
+    color: #ffff;
+    padding-top: 100px;
+    padding: 30px 50px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    /* Tạo khoảng cách giữa footer và nội dung trên */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content h4 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .book-item {
+        width: 150px;
+        padding: 10px;
+    }
+
+    /* CSS cho hình trang trí trung thu */
+    .codepro-trungthu-left,
+    .codepro-trungthu-right,
+    .codepro-trungthu-bottom {
+        position: fixed;
+        z-index: 9999;
+    }
+
+    .codepro-trungthu-left {
+        top: 0;
+        left: 0;
+        width: 220px;
+    }
+
+    .codepro-trungthu-right {
+        top: 0;
+        right: 0;
+        width: 220px;
+    }
+
+    .codepro-trungthu-bottom {
+        bottom: 0;
+        left: 0;
+        width: 270px;
+    }
+
+    .codepro-trungthu-left img,
+    .codepro-trungthu-right img,
+    .codepro-trungthu-bottom img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    @media(max-width: 1024px) {
+
+        .codepro-trungthu-left,
+        .codepro-trungthu-right,
+        .codepro-trungthu-bottom {
+            display: none !important;
+        }
+    }
+}
