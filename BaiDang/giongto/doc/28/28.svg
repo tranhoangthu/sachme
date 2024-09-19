@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
 "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg viewBox="0 0 909 1286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 641 910" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<clipPath id="c0_28"><path d="M-.2 910.4V1.1H642V910.4Z"/></clipPath>
+<clipPath id="c1_28"><path d="M-.2 910.8V1.1H642V910.8Z"/></clipPath>
+<clipPath id="c2_28"><path d="M54.7 865.6V44h543V865.6Z"/></clipPath>
 <style type="text/css"><![CDATA[
 .g0_28{
-fill: #000;
-stroke: #000;
-stroke-width: 1.528;
-stroke-linecap: square;
-stroke-miterlimit: 10;
+fill: #FFF;
 }
 ]]></style>
 </defs>
-<path fill-rule="evenodd" d="M120.7 581.2c0 2.2 -1.7 3.9 -3.8 3.9c-2.1 0 -3.8 -1.7 -3.8 -3.9c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 608.7c0 2.1 -1.7 3.9 -3.8 3.9c-2.1 0 -3.8 -1.8 -3.8 -3.9c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 636.2c0 2.1 -1.7 3.9 -3.8 3.9c-2.1 0 -3.8 -1.8 -3.8 -3.9c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 663.7c0 2.1 -1.7 3.9 -3.8 3.9c-2.1 0 -3.8 -1.8 -3.8 -3.9c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 691.2c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 718.7c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 746.2c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 773.7c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 801.2c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 828.7c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
-<path fill-rule="evenodd" d="M120.7 856.2c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_28"/>
+<g clip-path="url(#c1_28)">
+<path clip-path="url(#c0_28)" d="M0 -23623.2H641.7V290768.1H0V-23623.2Z" class="g0_28"/>
+</g>
+<path clip-path="url(#c2_28)" d="M55 -4060.6H597.4V2612.8H55V-4060.6Z" class="g0_28"/>
 </svg>

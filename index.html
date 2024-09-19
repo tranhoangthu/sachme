@@ -12,15 +12,145 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="./mouse/tenlua.png" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./main.js"></script>
 
 </head>
 
 <body>
+
+    <section class="stars-container"></section>
+    <div class="container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12"></div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <a id="top-btn" href="javascript:void(0);" class="hidden"><i class="fa">&#xf0aa;</i></a>
+
+    <script>
+        var button = document.getElementById("top-btn");
+
+        window.onscroll = function () {
+            if (window.scrollY > 200) {
+                button.classList.add("top-btn-is-visible");
+            } else {
+                button.classList.remove("top-btn-is-visible");
+            }
+        };
+
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+
+    <!-- 
+    <style>
+        .chat-face,
+        .chat-zalo,
+        .hotline {
+            border-radius: 50px;
+        }
+
+        .float-contact {
+            position: fixed;
+            bottom: 20px;
+            left: 10px;
+            z-index: 100;
+
+        }
+
+        .chat-zalo {
+
+            background: #0099ff;
+
+            padding: 10px 18px 10px;
+            color: white;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .chat-face {
+            background: #0055ff;
+
+            padding: 10px 18px 10px;
+            color: white;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .float-contact .hotline {
+            background: #d11a59 !important;
+
+            padding: 10px 18px 10px;
+            color: white;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .chat-zalo a,
+        .chat-face a,
+        .hotline a {
+
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+            font-weight: 500;
+            text-transform: none;
+            line-height: 2;
+        }
+
+        @media (max-width: 549px) {
+            .float-contact {
+                display: none;
+                /* visibility: unset; */
+            }
+        }
+    </style>
+    <div class="float-contact">
+        <button class="chat-zalo">
+            <a href="http://zalo.me/0123456789"><img src="https://giuseart.com/wp-content/uploads/2020/03/zl.png"
+                    style="max-width: 50px; max-height: 16px;" alt=""></a>
+        </button>
+        <button class="chat-face">
+            <a href="http://fb.com"><i class="bi bi-facebook"></i></a>
+        </button>
+        <button class="hotline">
+            <a href="tel:0123456789"><i class="bi bi-telephone-fill"></i></a>
+        </button>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="loader"></div>
+
+
+
+
     <style>
         #codepro-ads-left {
             bottom: 24px;
+
             left: 10px;
             position: fixed;
         }
@@ -43,19 +173,24 @@
         }
     </style>
 
-    <div class='codepro-ads-all'>
-        <div id='codepro-ads-left'>
+    <div class="codepro-ads-all">
+        <div id="codepro-ads-left" class="hidden">
             <a href="https://lapvip.vn/sale/khuyen-mai?utm_source=Admicro_AdX&utm_campaign=AdX&utm_content=www.vietjack.com&cpa_tid=01J7JHBR1RB152Z9JGJM338B98&_tp=11&tpn=4&dmn=www.vietjack.com"
-                target="_blank"><img src="./ads/3.png" alt="Quảng Cáo Fake" width="260px"></a>
+                target="_blank"><img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/3.png"
+                    alt="Quảng Cáo Fake" width="260px"></a>
         </div>
-        <div id='codepro_ads_right'>
+        <div id="codepro_ads_right" class="vi">
             <a href="https://laptopworld.vn/asus-expertbook-laptop-doanh-nghiep-ban-chay-2022.html" target="_blank"><img
-                    src="./ads/1702_2.png" alt="Quảng Cáo Fake" width="260px"></a>
+                    src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/1702_2.png"
+                    alt="Quảng Cáo Fake" width="260px"></a>
             <!-- ------------------------------------------------------------------------ -->
             <a href="https://www.facebook.com/story.php/?story_fbid=851713807096762&id=100067744503228&paipv=0&eav=AfYViHWx9cuuA3UYZ_LpYUKdhWbytlR1m9C6Lqk8owqmlzgTJgYEn2RNs7F9l5NvNVY&_rdr"
-                target="_blank"><img src="./ads/2.jpg" alt="Quảng Cáo Fake" width="260px"></a>
+                target="_blank"><img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/2.jpg"
+                    alt="Quảng Cáo Fake" width="260px"></a>
         </div>
     </div>
+
+
 
 
     <script src="https://app.tudongchat.com/js/chatbox.js"></script>
@@ -63,10 +198,18 @@
         const tudong_chatbox = new TuDongChat('mqQ1F_-6sVCznyLoLPEAD')
         tudong_chatbox.initial()
     </script>
-    <marquee direction="left"
-        style="color: red; background-color: black; padding-top: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 10px;">
-        <h1>Website Đang Bảo trì có thể 1 số chức năng sẽ gặp lỗi.</h1>
+
+    <marquee direction="left" class="vi"
+        style="color: rgb(255, 29, 29); background-color: rgb(63, 63, 63); padding: 10px; font-family: 'Segoe UI', sans-serif;">
+        <h3
+            style="font-size: 24px; font-weight: bold; text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255),      1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);">
+            ⭐
+            Website Đang Bảo Trì. Một số chức năng có thể
+            không hoạt động
+            bình
+            thường. ⭐</h3>
     </marquee>
+
     <div class="codepro-trungthu-left">
         <!-- <a href="#">
             <img alt="Trang trí đón trung thu cho blog/website bằng hình ảnh cành hoa, mặt trăng, lồng đèn và rước đèn"
@@ -92,18 +235,66 @@
         </div>
         <div id="bar">
             <ul>
-                <li><a href="./index.html">Trang Chủ</a></li>
+                <li>
+                    <a href="./index.html">
+                        <button>
+                            <i class="bi bi-house-fill" style="padding: 5px;"></i>Trang Chủ
+                        </button>
+                    </a>
+                </li>
                 <li class="dropdown">
-                    <a href="./theloai.html" class="dropbtn">Thể Loại</a>
+                    <button class="dropbtn">
+                        <i class="bi bi-book" style="padding: 5px;"></i>Thể Loại
+                    </button>
                     <div class="dropdown-content">
                         <a href="#">Sách Văn Học</a>
-                        <a href="#">Sách Kinh Tế</a>
+
                         <a href="#">Sách Khoa Học</a>
                         <a href="#">Sách Thiếu Nhi</a>
                         <a href="#">Sách Kỹ Năng Sống</a>
                     </div>
                 </li>
-                <li><a href="./thongtin.html">Thông Tin</a></li>
+
+                <li><a href="./thongtin.html"><button><i class="bi bi-info-circle-fill" style="padding: 5px;"></i>Thông
+                            Tin</button></a></li>
+                <!-- <li>
+                    <a class="toggle-btn" href="./hd.html"><button><i class="bi bi-filetype-pdf"
+                                style="padding: 5px;"></i>Cách Xem File PDF</button></a>
+                </li> -->
+                <li>
+                    <button id="theme-star-toggle" class="theme-toggle"><i class="bi bi-emoji-smile-fill"
+                            style="padding: 5px;"></i>Chế Độ Bí Ẩn</button>
+
+                    <script>
+                        const themeStarToggle = document.getElementById("theme-star-toggle");
+
+                        themeStarToggle.addEventListener("click", () => {
+                            // Chuyển đổi chế độ tối
+                            document.body.classList.toggle("dark-mode");
+
+                            // Hiển thị hoặc ẩn ngôi sao khi bật/tắt chế độ tối
+                            const stars = document.getElementById("stars");
+                            const stars2 = document.getElementById("stars2");
+                            const stars3 = document.getElementById("stars3");
+
+                            // Nếu chế độ tối được bật, hiển thị ngôi sao
+                            if (document.body.classList.contains("dark-mode")) {
+                                stars.style.display = "block";
+                                stars2.style.display = "block";
+                                stars3.style.display = "block";
+                            } else {
+                                // Nếu tắt chế độ tối, ẩn ngôi sao
+                                stars.style.display = "none";
+                                stars2.style.display = "none";
+                                stars3.style.display = "none";
+                            }
+                        });
+                    </script>
+                </li>
+
+
+
+
             </ul>
         </div>
 
@@ -117,34 +308,36 @@
                 <div class="book-list" style="padding-top: 20px;">
                     <div class="book-item">
                         <a href="BaiDang/hoangtube/hoangtube.html">
-                            <img src="./BaiDang/hoangtube/hoangtube.webp" alt="Hoàng Tử Bé" title="Hoàng Tử Bé">
+                            <img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/hoangtube.webp"
+                                alt="Hoàng Tử Bé" title="Hoàng Tử Bé">
                         </a>
                         <a href="BaiDang/hoangtube/hoangtube.html" class="read-button">Đọc Ngay</a>
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/gmtn/giaimatainang.html">
-                            <img src="./BaiDang/gmtn/gmtn1.webp" alt="Giải Mã Tài Năng" title="Giải Mã Tài Năng">
+                            <img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/gmtn1.webp"
+                                alt="Giải Mã Tài Năng" title="Giải Mã Tài Năng">
                         </a>
                         <a href="BaiDang/gmtn/giaimatainang.html" class="read-button">Đọc Ngay</a>
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/bgcc/bgcc.html">
-                            <img src="./BaiDang/bgcc/baigiangcuoicung.webp" alt="Bài Giảng Cuối Cùng"
-                                title="Bài Giảng Cuối Cùng">
+                            <img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/baigiangcuoicung.webp"
+                                alt="Bài Giảng Cuối Cùng" title="Bài Giảng Cuối Cùng">
                         </a>
                         <a href="BaiDang/bgcc/bgcc.html" class="read-button">Đọc Ngay</a>
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/nnkk/nnkk.html">
-                            <img src="./BaiDang/nnkk/nnkk1.webp" alt="Những Người Khốn Khổ"
-                                title="Những Người Khốn Khổ">
+                            <img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/nnkk1.webp"
+                                alt="Những Người Khốn Khổ" title="Những Người Khốn Khổ">
                         </a>
                         <a href="BaiDang/nnkk/nnkk.html" class="read-button">Đọc Ngay</a>
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/ntlcc/ntlcc.html">
-                            <img src="./BaiDang/ntlcc/ntlcc.webp" alt="Những Tấm Lòng Cao Cả"
-                                title="Những Tấm Lòng Cao Cả">
+                            <img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/ntlcc.webp"
+                                alt="Những Tấm Lòng Cao Cả" title="Những Tấm Lòng Cao Cả">
                         </a>
                         <a href="BaiDang/ntlcc/ntlcc.html" class="read-button">Đọc Ngay</a>
                     </div>
@@ -157,14 +350,27 @@
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/ccdc/ccdc.html">
-                            <img src="./BaiDang/ccdc/ccdc.jpg" alt="Chú Chó Đợi Chờ" title="Chú Chó Đợi Chờ">
+                            <img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/ccdc.jpg"
+                                alt="Chú Chó Đợi Chờ" title="Chú Chó Đợi Chờ">
                         </a>
                         <a href="BaiDang/ccdc/ccdc.html" class="read-button">Đọc Ngay</a>
                     </div>
+                    <div class="book-item">
+                        <a href="BaiDang/tncd/tncd.html">
+                            <img src="https://www.dtv-ebook.com/images/truyen-online/ebook-tram-nam-co-don-prc-pdf-epub.jpg"
+                                alt="Trăm Năm Cô Đơn" title="Trăm Năm Cô Đơn">
+                        </a>
+                        <a href="BaiDang/tncd/tncd.html" class="read-button">Đọc Ngay</a>
+                    </div>
                 </div>
 
-                <h3 style="padding-bottom: 5px; padding-top: 30px; padding-left: 30px;">Sách Việt
-                    Nam<a href="" style="padding-left: 400px;">Xem Thêm</a></h3>
+
+
+                <!-- ========================================================================================= -->
+
+                <h3 style="padding-bottom: 5px; padding-top: 30px; padding-left: 30px;">Sách Việt Nam
+                    <a href="" style="padding-left: 400px;">Xem Thêm</a>
+                </h3>
                 <hr style="padding-bottom: 5px;" color="red">
                 <div class="book-list" style="padding-top: 20px;">
                     <div class="book-item">
@@ -175,11 +381,11 @@
                         <a href="BaiDang/td/td.html" class="read-button">Đọc Ngay</a>
                     </div>
                     <div class="book-item">
-                        <a href="BaiDang/gt/gt.html">
+                        <a href="BaiDang/giongto/gt.html">
                             <img src="https://www.sachhayonline.com/data/book-photos/22.jpg" alt="Giông Tố"
                                 title="Giông Tố">
                         </a>
-                        <a href="BaiDang/gt/gt.html" class="read-button">Đọc Ngay</a>
+                        <a href="BaiDang/giongto/gt.html" class="read-button">Đọc Ngay</a>
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/sm/sm.html">
@@ -190,8 +396,8 @@
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/bc/bc.html">
-                            <img src="https://www.sachhayonline.com/data/book-photos/40.jpg" alt="Bỏ Chồng"
-                                title="Bỏ Chồng">
+                            <img src="https://www.dtv-ebook.com/images/files_2/2019/bo-chong-ho-bieu-chanh.jpg"
+                                alt="Bỏ Chồng" title="Bỏ Chồng">
                         </a>
                         <a href="BaiDang/bc/bc.html" class="read-button">Đọc Ngay</a>
                     </div>
@@ -202,7 +408,6 @@
                         </a>
                         <a href="BaiDang/lctscv/lctscv.html" class="read-button">Đọc Ngay</a>
                     </div>
-
                     <div class="book-item">
                         <a href="BaiDang/drpn/drpn.html">
                             <img src="https://img.upanh.tv/2024/09/12/2a396750173a4dbf819e07d778c53827.jpg"
@@ -210,21 +415,146 @@
                         </a>
                         <a href="BaiDang/drpn/drpn.html" class="read-button">Đọc Ngay</a>
                     </div>
-
-
-
-
-
-
-
-
+                    <div class="book-item">
+                        <a href="BaiDang/nt/nt.html">
+                            <img src="https://i1-giaitri.vnecdn.net/2024/01/16/nguoi-thay-nguyen-chi-vinh-169-3877-5142-1705380461.jpg?w=0&h=0&q=100&dpr=2&fit=crop&s=6rJTT0SMVrNxxxvHQaB8TA"
+                                alt="Người Thầy" title="Người Thầy">
+                        </a>
+                        <a href="BaiDang/nt/nt.html" class="read-button">Đọc Ngay</a>
+                    </div>
+                    <div class="book-item">
+                        <a href="BaiDang/nbcc/nbcc.html">
+                            <img src="https://nhasachmienphi.com/images/thumbnail/nhasachmienphi-noi-buon-chien-tranh.jpg"
+                                alt="Nổi Buồn Chiến Tranh" title="Nổi Buồn Chiến Tranh">
+                        </a>
+                        <a href="BaiDang/nbcc/nbcc.html" class="read-button">Đọc Ngay</a>
+                    </div>
                 </div>
+
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <p>© 2024 WEB CỦA TUIII. All rights reserved.</p>
-    </div>
+        <div class="footer">
+            <p>© 2024 WEB CỦA TUIII. All rights reserved.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>

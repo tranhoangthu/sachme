@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
 "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg viewBox="0 0 909 1286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 641 910" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<clipPath id="c0_2"><path d="M-.2 910.4V1.1H642V910.4Z"/></clipPath>
+<clipPath id="c1_2"><path d="M-.2 910.8V1.1H642V910.8Z"/></clipPath>
+<clipPath id="c2_2"><path d="M54.7 865.6V44h543V865.6Z"/></clipPath>
 <style type="text/css"><![CDATA[
 .g0_2{
-fill: none;
-stroke: #00E;
-stroke-width: 1.528;
-stroke-linecap: square;
-stroke-miterlimit: 10;
+fill: #FFF;
 }
 ]]></style>
 </defs>
-<path d="M282.8 283.4H472.3Z" class="g0_2"/>
+<g clip-path="url(#c1_2)">
+<path clip-path="url(#c0_2)" d="M0 1.5H641.7V314392.9H0V1.5Z" class="g0_2"/>
+</g>
+<path clip-path="url(#c2_2)" d="M55 44.3H597.4V970.8H55V44.3Z" class="g0_2"/>
 </svg>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
 "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg viewBox="0 0 909 1286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 641 910" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<clipPath id="c0_128"><path d="M-.2 910.4V1.1H642V910.4Z"/></clipPath>
+<clipPath id="c1_128"><path d="M-.2 910.8V1.1H642V910.8Z"/></clipPath>
+<clipPath id="c2_128"><path d="M54.7 865.6V44h543V865.6Z"/></clipPath>
 <style type="text/css"><![CDATA[
 .g0_128{
-fill: #000;
-stroke: #000;
-stroke-width: 1.528;
-stroke-linecap: square;
-stroke-miterlimit: 10;
+fill: #FFF;
 }
 ]]></style>
 </defs>
-<path fill-rule="evenodd" d="M120.7 309.3c0 2.1 -1.7 3.9 -3.8 3.9c-2.1 0 -3.8 -1.8 -3.8 -3.9c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_128"/>
-<path fill-rule="evenodd" d="M120.7 364.3c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_128"/>
-<path fill-rule="evenodd" d="M120.7 419.3c0 2.1 -1.7 3.8 -3.8 3.8c-2.1 0 -3.8 -1.7 -3.8 -3.8c0 -2.1 1.7 -3.8 3.8 -3.8c2.1 0 3.8 1.7 3.8 3.8" class="g0_128"/>
+<g clip-path="url(#c1_128)">
+<path clip-path="url(#c0_128)" d="M0 -114487.8H641.7V199903.6H0V-114487.8Z" class="g0_128"/>
+</g>
+<path clip-path="url(#c2_128)" d="M55 -1597.6H597.4V6717.8H55V-1597.6Z" class="g0_128"/>
 </svg>
