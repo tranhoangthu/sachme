@@ -1,13 +1,29 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
+
 #top-btn.top-btn-is-visible {
     visibility: visible;
     opacity: 1;
 }
 
-/* 
+
 
 body {
     font-family: 'Be Vietnam Pro', 'Arial', sans-serif;
-} */
+    /* animation: transitionIn 1s; */
+}
 
 #top-btn {
     opacity: 0;
@@ -69,7 +85,10 @@ html {
     padding: 0
 }
 
+/* 
 .loader {
+    background-image: url('load.gif') repeat center center;
+    ;
     position: fixed;
     top: 0;
     left: 0;
@@ -95,7 +114,7 @@ html {
     border-color: #7bed9f #1e90ff #eccc68 #ff6b81;
     border-radius: 50%;
     animation: loading .75s ease infinite
-}
+} */
 
 #warpper {
     max-width: 960px;
@@ -124,6 +143,7 @@ html {
 }
 
 #bar ul {
+    border-radius: 25%;
     list-style: none;
     margin: 0;
     padding: 20 10px;
@@ -157,6 +177,7 @@ html {
 .dropbtn,
 .dropdown-content a {
     padding-left: 20px;
+    border-radius: 4px;
     padding-right: 20px;
     color: #ffffff;
     text-decoration: none
@@ -173,6 +194,7 @@ html {
 .dropdown-content {
     display: none;
     position: absolute;
+    border-radius: 4px;
     background-color: #858585;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
@@ -198,6 +220,7 @@ html {
 .dropdown:hover {
     background-color: #474747;
     /* padding-top: 20px; */
+    border-radius: 4px;
     /* padding-bottom: 20px */
 }
 
