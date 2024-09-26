@@ -59,10 +59,10 @@
         const tudong_chatbox = new TuDongChat('mqQ1F_-6sVCznyLoLPEAD')
         tudong_chatbox.initial()
     </script>
-    <marquee direction="left"
+    <!-- <marquee direction="left"
         style="color: red; background-color: black; padding-top: 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 10px;">
         <h1>Website Đang Bảo trì có thể 1 số chức năng sẽ gặp lỗi.</h1>
-    </marquee>
+    </marquee> -->
     <div id="warpper">
         <div id="header">
             <h1>Xin Chào ! 🍁</h1>
@@ -70,9 +70,10 @@
         </div>
         <div id="bar">
             <ul>
-                <li><a href="./index.html">Trang Chủ</a></li>
+                <li><a href="./index.html"><button>Trang Chủ</button></a>
+                </li>
                 <li class="dropdown">
-                    <a href="./theloai.html" class="dropbtn">Thể Loại</a>
+                    <button href="./theloai.html" class="dropbtn">Thể Loại</button>
                     <div class="dropdown-content">
                         <a href="#">Sách Văn Học</a>
                         <a href="#">Sách Kinh Tế</a>
@@ -81,33 +82,50 @@
                         <a href="#">Sách Kỹ Năng Sống</a>
                     </div>
                 </li>
-                <li><a href="./thongtin.html">Thông Tin</a></li>
+                <li><button href="./thongtin.html">Thông Tin</button>
+                </li>
             </ul>
         </div>
         <div id="main-content">
             <div id="content">
                 <h2 style="padding-bottom: 20px;">Trang web đọc sách online này được làm bởi ai ? 🤔</h2>
                 <hr size="10px" color="gray">
-                <p style="padding-top: 30px;">Trần Hoàng Thứ, một chàng trai 15 tuổi đầy nhiệt huyết, đã bắt đầu đam mê
-                    công nghệ và sách từ khi
-                    còn rất nhỏ. Lần đầu tiên được bố mẹ mua cho một chiếc máy tính, Thứ đã vô cùng thích thú và dành
-                    hàng giờ để khám phá. Từ đó, cậu bé luôn tò mò về cách các trang web hoạt động và mơ ước một ngày
-                    nào đó sẽ tự mình tạo ra những sản phẩm công nghệ hữu ích, đặc biệt là trong lĩnh vực đọc sách
-                    online.</p>
-                <p>Với niềm đam mê mãnh liệt, Thứ đã tự học HTML, CSS và JavaScript từ những tài liệu trực tuyến, các
-                    khóa học miễn phí và cộng đồng lập trình. Cậu bé đã dành nhiều thời gian để thực hành, xây dựng các
-                    dự án nhỏ để rèn luyện kỹ năng. Dù gặp không ít khó khăn, nhưng với sự kiên trì và quyết tâm, Thứ đã
-                    không ngừng nỗ lực để hoàn thiện bản thân.</p>
-                <p>Trang web đọc sách online này là thành quả của những tháng ngày miệt mài học tập và sáng tạo của Thứ.
-                    Cậu bé đã sử dụng HTML để xây dựng cấu trúc cơ bản cho trang web, CSS để tạo nên giao diện đẹp mắt
-                    và sinh động, và JavaScript để thêm các hiệu ứng tương tác thú vị. Thứ mong muốn trang web này không
-                    chỉ là một nơi để thể hiện khả năng của bản thân mà còn là một sản phẩm hữu ích cho người dùng yêu
-                    thích đọc sách.</p>
-                <p>Thứ tin rằng đây chỉ là bước khởi đầu trong hành trình chinh phục thế giới công nghệ của mình. Trong
-                    tương lai, Thứ mong muốn trở thành một lập trình viên giỏi, tạo ra những sản phẩm có giá trị cho
-                    cộng đồng. Thứ muốn gửi lời nhắn đến các bạn trẻ: "Hãy theo đuổi đam mê của mình, đừng bao giờ bỏ
-                    cuộc. Với sự nỗ lực không ngừng, các bạn sẽ đạt được những thành công như mong muốn.</p>
-
+                <div style="font-family: Open Sans;">
+                    <p style="padding-top: 30px;">Trần Hoàng Thứ, một chàng trai 15 tuổi đầy nhiệt huyết, đã bắt đầu đam
+                        mê
+                        công nghệ và sách từ khi
+                        còn rất nhỏ. Lần đầu tiên được bố mẹ mua cho một chiếc máy tính, Thứ đã vô cùng thích thú và
+                        dành
+                        hàng giờ để khám phá. Từ đó, cậu bé luôn tò mò về cách các trang web hoạt động và mơ ước một
+                        ngày
+                        nào đó sẽ tự mình tạo ra những sản phẩm công nghệ hữu ích, đặc biệt là trong lĩnh vực đọc sách
+                        online.</p>
+                    <br>
+                    <p>Với niềm đam mê mãnh liệt, Thứ đã tự học HTML, CSS và JavaScript từ những tài liệu trực tuyến,
+                        các
+                        khóa học miễn phí và cộng đồng lập trình. Cậu bé đã dành nhiều thời gian để thực hành, xây dựng
+                        các
+                        dự án nhỏ để rèn luyện kỹ năng. Dù gặp không ít khó khăn, nhưng với sự kiên trì và quyết tâm,
+                        Thứ đã
+                        không ngừng nỗ lực để hoàn thiện bản thân.</p>
+                    <br>
+                    <p>Trang web đọc sách online này là thành quả của những tháng ngày miệt mài học tập và sáng tạo của
+                        Thứ.
+                        Cậu bé đã sử dụng HTML để xây dựng cấu trúc cơ bản cho trang web, CSS để tạo nên giao diện đẹp
+                        mắt
+                        và sinh động, và JavaScript để thêm các hiệu ứng tương tác thú vị. Thứ mong muốn trang web này
+                        không
+                        chỉ là một nơi để thể hiện khả năng của bản thân mà còn là một sản phẩm hữu ích cho người dùng
+                        yêu
+                        thích đọc sách.</p>
+                    <br>
+                    <p>Thứ tin rằng đây chỉ là bước khởi đầu trong hành trình chinh phục thế giới công nghệ của mình.
+                        Trong
+                        tương lai, Thứ mong muốn trở thành một lập trình viên giỏi, tạo ra những sản phẩm có giá trị cho
+                        cộng đồng. Thứ muốn gửi lời nhắn đến các bạn trẻ: "Hãy theo đuổi đam mê của mình, đừng bao giờ
+                        bỏ
+                        cuộc. Với sự nỗ lực không ngừng, các bạn sẽ đạt được những thành công như mong muốn.</p>
+                </div>
             </div>
             <hr class="hr" color="gray">
         </div>
