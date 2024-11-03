@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/hoangtube.webp" alt="Sách Mê Logo" width="200"/>
   
-  [Xem Demo](https://tranhoangthu.github.io/sachme/) | [Báo Lỗi](https://github.com/tranhoangthu/sachme/issues) | [Đóng Góp](https://github.com/tranhoangthu/sachme/pulls)
+  [Xem Website](https://tranhoangthu.github.io/sachme/) | [Báo Lỗi](https://github.com/tranhoangthu/sachme/issues) | [Đóng Góp](https://github.com/tranhoangthu/sachme/pulls)
 </div>
 
 ## 📖 Giới Thiệu
@@ -18,6 +18,7 @@ Sách Mê là một thư viện sách online miễn phí, được phát triển
 - 💬 Tích hợp chatbox hỗ trợ
 - 📝 Hệ thống góp ý
 - ⭐ Hiệu ứng animation mượt mà
+- 🔊 Sách Nói
 
 ## 🛠️ Công Nghệ Sử Dụng
 
@@ -31,21 +32,19 @@ Sách Mê là một thư viện sách online miễn phí, được phát triển
 
 ## 📝 Todo
 
-- [no] Thêm tính năng đánh giá sách
-- [ok] Cải thiện SEO
-- [ok] Tối ưu hiệu suất tải trang
-- [no] Thêm tính năng bookmark
-- [ok] Phát triển PWA
-
-## 🔑 License
-
-Dự án được phân phối dưới giấy phép MIT. Xem `LICENSE` để biết thêm thông tin.
-
+- [❎] Thêm tính năng đánh giá sách
+- [✅] Cải thiện SEO
+- [✅] Tối ưu hiệu suất tải trang
+- [❎] Thêm tính năng bookmark
+- [❎] Phát triển PWA
+   
 ## 📞 Liên Hệ
 
 - Website: [https://tranhoangthu.github.io/sachme/](https://tranhoangthu.github.io/sachme/)
 - GitHub: [@tranhoangthu](https://github.com/tranhoangthu)
 - Email: [tranhoangthu8@gmail.com]
+- Facebook: [Trần Hoàng Thứ](https://facebook.com/tranhoangthuit)
+- Hotline/Zalo: [0941175???](https://zalo.me/0941175484)
 
 ## 🙏 Cảm ơn
 
