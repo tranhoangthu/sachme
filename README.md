@@ -30,13 +30,13 @@ Sách Mê là một thư viện sách online miễn phí, được phát triển
 - AOS Animation Library
 - TuDongChat Integration
 
-## 📝 Todo
+## 🪄 Update
 
-- [❎] Thêm tính năng đánh giá sách
+- [✅] Chức năng sách nói
 - [✅] Cải thiện SEO
 - [✅] Tối ưu hiệu suất tải trang
-- [❎] Thêm tính năng bookmark
-- [❎] Phát triển PWA
+- [✅] Đọc sách trực tuyến
+- [✅] Tương thích tốt
    
 ## 📞 Liên Hệ
 
@@ -48,7 +48,7 @@ Sách Mê là một thư viện sách online miễn phí, được phát triển
 
 ## 🙏 Cảm ơn
 
-Cảm ơn tất cả những người đã đóng góp cho dự án Sách Mê!
+Cảm ơn tất cả những người đã đóng góp ý tưởng cho dự án Sách Mê!
 
 ---
 Được phát triển bởi [Trần Hoàng Thứ](https://github.com/tranhoangthu) với ❤️
