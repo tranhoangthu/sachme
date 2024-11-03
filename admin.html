@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Điều Khiển Cơ Bản</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="./admin.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="profile">
+            <img src="02.png" alt="Admin Avatar">
+            <h3>Admin</h3>
+            <p>Quản trị viên</p>
+        </div>
+        <ul>
+            <li><a href="#" onclick="showContent('home')"><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a href="#" onclick="showContent('report')"><i class="fas fa-file-alt"></i> Báo cáo</a></li>
+            <li><a href="#" onclick="showContent('users')"><i class="fas fa-users"></i> Người dùng</a></li>
+            <li><a href="#" onclick="showContent('settings')"><i class="fas fa-cog"></i> Cài đặt</a></li>
+        </ul>
+    </div>
+
+
+    <div class="main-content">
+        <header>
+            <h1>Bảng Điều Khiển Sách Mê</h1>
+        </header>
+
+        <section class="dashboard" id="dashboard-content">
+            <div class="card">
+                <!-- Đặt chữ và hình bàn tay vào một div container -->
+                <div class="greeting-container">
+                    <div class="greeting-text" style="">
+                        <h3>Xin Chào</h3>
+                        <p>Chúc bạn một ngày vui vẻ!</p>
+                    </div>
+                    <img class="hand-wave" src="./a.webp" alt="Bàn tay" width="50px">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+    <script>
+        function showContent(section) {
+            document.getElementById('dashboard-content').innerHTML = '';
+            if (section === 'home') {
+                document.getElementById('dashboard-content').innerHTML = `
+                
+                <div class="card">
+                <!-- Đặt chữ và hình bàn tay vào một div container -->
+                <div class="greeting-container">
+                    <div class="greeting-text">
+                        <h3>Xin Chào</h3>
+                        <p>Chúc bạn một ngày vui vẻ!</p>
+                    </div>
+                    <img class="hand-wave" src="./a.webp" alt="Bàn tay" width="50px">
+                </div>
+            </div>`;
+            } else if (section === 'report') {
+                document.getElementById('dashboard-content').innerHTML = `
+                    <div class="card">
+                        <h3>Báo cáo hàng ngày</h3>
+                        <p>Thông tin chi tiết về các báo cáo hàng ngày.</p>
+                    </div>`;
+            } else if (section === 'users') {
+                document.getElementById('dashboard-content').innerHTML = `
+                    <div class="card">
+                        <h3>Người dùng mới</h3>
+                        <p>Danh sách người dùng mới.</p>
+                    </div>`;
+            } else if (section === 'settings') {
+                document.getElementById('dashboard-content').innerHTML = `
+                    <div class="card">
+                        <h3>Cài đặt hệ thống</h3>
+                        <p>Tùy chọn cấu hình hệ thống.</p>
+                    </div>`;
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Import thư viện Chart.js -->
+    <script>
+        function showContent(section) {
+            document.getElementById('dashboard-content').innerHTML = '';
+            if (section === 'home') {
+                document.getElementById('dashboard-content').innerHTML = `
+                    <div class="card">
+                        <div class="greeting-container">
+                            <div class="greeting-text">
+                                <h3>Xin Chào</h3>
+                                <p>Chúc bạn một ngày vui vẻ!</p>
+                            </div>
+                            <img class="hand-wave" src="./a.webp" alt="Bàn tay" width="50px">
+                        </div>
+                    </div>`;
+            } else if (section === 'report') {
+                document.getElementById('dashboard-content').innerHTML = `
+                    <div class="report-card">
+                        <h3>Xếp hạng sách xem nhiều nhất</h3>
+                        <table class="ranking-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Tiêu đề sách</th>
+                                    <th>Tác giả</th>
+                                    <th>Lượt xem</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Tắt Đèn</td>
+                                    <td>Ngô Tất Tố</td>
+                                    <td>1500</td>
+                                    <td><a href="#" class="read-btn">Đọc</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Những Người Khốn Khổ</td>
+                                    <td>Victor Hugo</td>
+                                    <td>1200</td>
+                                    <td><a href="#" class="read-btn">Đọc</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Đất Rừng Phương Nam</td>
+                                    <td>Đoàn Giỏi</td>
+                                    <td>1000</td>
+                                    <td><a href="#" class="read-btn">Đọc</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
+                        <!-- Biểu đồ lượt xem theo ngày -->
+                        <h3>Biểu đồ lượt xem theo ngày</h3>
+                        <canvas id="viewChart" width="400" height="200"></canvas>
+    
+                        <!-- Thêm phần số người like và góp ý -->
+                        <div class="feedback-info">
+                            <div class="likes">
+                                <h4>Lượt thích 👍</h4>
+                                <p><span id="likeCount">350</span> người đã thích sách. </p>
+                            </div>
+                            <div class="comments">
+                                <h4>Góp ý 🤝</h4>
+                                <p><span id="commentCount">120</span> lượt góp ý về sách. </p>
+                            </div>
+                        </div>
+                    </div>`;
+
+                // Khởi tạo biểu đồ
+                var ctx = document.getElementById('viewChart').getContext('2d');
+                var viewChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'Chủ nhật'],
+                        datasets: [{
+                            label: 'Lượt xem',
+                            data: [1200, 1500, 1000, 1800, 2200, 1300, 1600],
+                            backgroundColor: 'rgba(85, 124, 86, 0.2)',
+                            borderColor: '#557C56',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

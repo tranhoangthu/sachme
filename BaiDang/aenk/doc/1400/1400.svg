@@ -1,0 +1,44 @@
+<svg viewBox="0 0 935 1210" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="c0_1400"><path d="M109.7 1100.3V109.7H825.3v990.6Z"/></clipPath>
+<style>
+.g0_1400{fill:#FFF;}
+.g1_1400{fill:#000;}
+</style>
+</defs>
+<path clip-path="url(#c0_1400)" d="M110-1869.9H825V5170H110V-1869.9Z" class="g0_1400"/>
+<path d="M292.2 1040.4H818.1v1.2H292.2v-1.2Z" class="g1_1400"/>
+<path d="M817 972.8h1.1v68.8H817V972.8Z" class="g1_1400"/>
+<path d="M118 1040.4H293.3v1.2H118v-1.2Z" class="g1_1400"/>
+<path d="M118 972.8h1.2v68.8H118V972.8Z" class="g1_1400"/>
+<path d="M292.2 972.8h1.1v68.8h-1.1V972.8Z" class="g1_1400"/>
+<path d="M292.2 972.8H818.1V974H292.2v-1.2Z" class="g1_1400"/>
+<path d="M817 877.7h1.1V974H817V877.7Z" class="g1_1400"/>
+<path d="M118 972.8H293.3V974H118v-1.2Z" class="g1_1400"/>
+<path d="M118 877.7h1.2V974H118V877.7Z" class="g1_1400"/>
+<path d="M292.2 877.7h1.1V974h-1.1V877.7Z" class="g1_1400"/>
+<path d="M292.2 877.7H818.1v1.2H292.2v-1.2Z" class="g1_1400"/>
+<path d="M817 810.1h1.1v68.8H817V810.1Z" class="g1_1400"/>
+<path d="M118 877.7H293.3v1.2H118v-1.2Z" class="g1_1400"/>
+<path d="M118 810.1h1.2v68.8H118V810.1Z" class="g1_1400"/>
+<path d="M292.2 810.1h1.1v68.8h-1.1V810.1Z" class="g1_1400"/>
+<path d="M292.2 810.1H818.1v1.2H292.2v-1.2Z" class="g1_1400"/>
+<path d="M817 742.5h1.1v68.8H817V742.5Z" class="g1_1400"/>
+<path d="M118 810.1H293.3v1.2H118v-1.2Z" class="g1_1400"/>
+<path d="M118 742.5h1.2v68.8H118V742.5Z" class="g1_1400"/>
+<path d="M292.2 742.5h1.1v68.8h-1.1V742.5Z" class="g1_1400"/>
+<path d="M292.2 742.5H818.1v1.1H292.2v-1.1Z" class="g1_1400"/>
+<path d="M817 647.4h1.1v96.2H817V647.4Z" class="g1_1400"/>
+<path d="M118 742.5H293.3v1.1H118v-1.1Z" class="g1_1400"/>
+<path d="M118 647.4h1.2v96.2H118V647.4Z" class="g1_1400"/>
+<path d="M292.2 647.4h1.1v96.2h-1.1V647.4Z" class="g1_1400"/>
+<path d="M292.2 112.3H818.1v1.1H292.2v-1.1Z" class="g1_1400"/>
+<path d="M292.2 647.4H818.1v1.1H292.2v-1.1Z" class="g1_1400"/>
+<path d="M817 112.3h1.1V648.5H817V112.3Z" class="g1_1400"/>
+<path d="M118 112.3H293.3v1.1H118v-1.1Z" class="g1_1400"/>
+<path d="M118 647.4H293.3v1.1H118v-1.1Z" class="g1_1400"/>
+<path d="M118 112.3h1.2V648.5H118V112.3Z" class="g1_1400"/>
+<path d="M292.2 112.3h1.1V648.5h-1.1V112.3Z" class="g1_1400"/>
+<path d="M292.2 112.3H818.1v1.1H292.2v-1.1Z" class="g1_1400"/>
+<path d="M118 112.3H293.3v1.1H118v-1.1Z" class="g1_1400"/>
+</svg>

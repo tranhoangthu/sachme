@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gopy.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="aos.css">
+
+</head>
+
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title" data-aos="fade-right  " data-aos-delay="50">
+                <h2>
+                    Góp ý tại đây !
+                </h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="d9cc6250-0acf-447e-8da8-14c37d2ddbe1">
+            <input type="name" name="name" placeholder="Tên của bạn" class="contact-inputs" data-aos="fade-right"
+                required>
+
+            <input type="email" name="email" placeholder="Email của bạn" class="contact-inputs" data-aos="fade-right"
+                data-aos-delay="50" required>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <textarea name="message" placeholder="Lời nhắn !" class="contact-left-textbox" data-aos="fade-right"
+                data-aos-delay="100" required></textarea>
+
+            <button type="submit" data-aos="fade-right" data-aos-delay="200">Gửi Góp Ý <img src="assets/arrow_icon.png"
+                    data-aos="fade-right" data-aos-delay="100" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="assets/a.png" alt="" data-aos-delay="50" data-aos="fade-left">
+        </div>
+    </div>
+    <script src="./aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

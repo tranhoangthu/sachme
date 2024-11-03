@@ -1,0 +1,92 @@
+.hidden {
+    display: none;
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #4e9ff0;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    display: flex;
+    /* Các thuộc tính khác cho popup */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.hidden-user {
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.user-info {
+    font-size: 12px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1001;
+    /* Nằm trên popup nhưng dưới lớp loading */
+}
+
+.hidden {
+    display: none;
+    /* Ẩn thông tin người dùng theo mặc định */
+}

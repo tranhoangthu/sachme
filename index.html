@@ -17,20 +17,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./main.js"></script>
-
-
+    <link rel="stylesheet" href="./aos.css" />
 
     <style>
-    body {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-    }
-</style>
-<script type="text/JavaScript">
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <!-- <script type="text/JavaScript">
     function killCopy(e) { 
         return false;
     } 
@@ -43,55 +42,63 @@
         document.onmousedown = killCopy;
         document.onclick = reEnable;
     }
-</script>
+</script> -->
+    <!-- 
+    <script language="JavaScript">
+        window.onload = function () {
+            document.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+                alert("Chuột phải đã bị vô hiệu hóa.");
+            }, false);
 
-<script language="JavaScript">
-    window.onload = function() {
-        document.addEventListener("contextmenu", function(e) {
-            e.preventDefault();
-            alert("Chuột phải đã bị vô hiệu hóa.");
-        }, false);
+            document.addEventListener("keydown", function (e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e, "Ctrl+Shift+I đã bị vô hiệu hóa.");
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e, "Ctrl+Shift+J đã bị vô hiệu hóa.");
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e, "Ctrl+S hoặc Cmd+S đã bị vô hiệu hóa.");
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e, "Ctrl+U đã bị vô hiệu hóa.");
+                }
+                // "F12" key
+                if (e.keyCode == 123) {
+                    disabledEvent(e, "Phím F12 đã bị vô hiệu hóa.");
+                }
+            }, false);
 
-        document.addEventListener("keydown", function(e) {
-            // "I" key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-                disabledEvent(e, "Ctrl+Shift+I đã bị vô hiệu hóa.");
+            function disabledEvent(e, message) {
+                alert(message);
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
             }
-            // "J" key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                disabledEvent(e, "Ctrl+Shift+J đã bị vô hiệu hóa.");
-            }
-            // "S" key + macOS
-            if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-                disabledEvent(e, "Ctrl+S hoặc Cmd+S đã bị vô hiệu hóa.");
-            }
-            // "U" key
-            if (e.ctrlKey && e.keyCode == 85) {
-                disabledEvent(e, "Ctrl+U đã bị vô hiệu hóa.");
-            }
-            // "F12" key
-            if (e.keyCode == 123) {
-                disabledEvent(e, "Phím F12 đã bị vô hiệu hóa.");
-            }
-        }, false);
+        };
+    </script> -->
 
-        function disabledEvent(e, message) {
-            alert(message);
-            if (e.stopPropagation) {
-                e.stopPropagation();
-            } else if (window.event) {
-                window.event.cancelBubble = true;
-            }
-            e.preventDefault();
-            return false;
+
+    <style>
+        html,
+        body {
+            cursor: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjac-SGqqBNOf8R-yQBGf8rXc_3Mko7Jk_Vf-3mtmVeE3EiU4oaRG-3lS1CqQ5XgWXpBspTaSriDXGF73L3m9V0c0K07iDq1r7XyLXpsEqU3VF2O6mT-gZkqsJimuxi8gLvOQtxhGXx8Y9a/s0/mouse-f1.png"), auto;
         }
-    };
-</script>
 
+        a:hover {
+            cursor: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjITCvg05WrPmBtw3wfCNDButQe1JVWYCtbJ07WNQ1Q_72Sf0PTOXRzt9H8OqryPkJrC7GmiHUJ0CwHje_VLV2Trr9cumn0Y6eMcFL77Z9fm4G4I3ZwLHu8I8kDUy9rkXjzH_v49SscqVYT/s0/mouse-f2.png"), auto;
+        }
+    </style>
 
-
-
-    
 </head>
 
 <body>
@@ -129,99 +136,11 @@
     </script>
 
 
-    <!-- 
-    <style>
-        .chat-face,
-        .chat-zalo,
-        .hotline {
-            border-radius: 50px;
-        }
-
-        .float-contact {
-            position: fixed;
-            bottom: 20px;
-            left: 10px;
-            z-index: 100;
-
-        }
-
-        .chat-zalo {
-
-            background: #0099ff;
-
-            padding: 10px 18px 10px;
-            color: white;
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        .chat-face {
-            background: #0055ff;
-
-            padding: 10px 18px 10px;
-            color: white;
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        .float-contact .hotline {
-            background: #d11a59 !important;
-
-            padding: 10px 18px 10px;
-            color: white;
-            display: block;
-            margin-bottom: 6px;
-        }
-
-        .chat-zalo a,
-        .chat-face a,
-        .hotline a {
-
-            text-decoration: none;
-            font-size: 15px;
-            color: white;
-            font-weight: 500;
-            text-transform: none;
-            line-height: 2;
-        }
-
-        @media (max-width: 549px) {
-            .float-contact {
-                display: none;
-                /* visibility: unset; */
-            }
-        }
-    </style>
-    <div class="float-contact">
-        <button class="chat-zalo">
-            <a href="http://zalo.me/0123456789"><img src="https://giuseart.com/wp-content/uploads/2020/03/zl.png"
-                    style="max-width: 50px; max-height: 16px;" alt=""></a>
-        </button>
-        <button class="chat-face">
-            <a href="http://fb.com"><i class="bi bi-facebook"></i></a>
-        </button>
-        <button class="hotline">
-            <a href="tel:0123456789"><i class="bi bi-telephone-fill"></i></a>
-        </button>
-    </div> -->
-
-
-
-
-
-
 
     <div class="loader">
         <img src="load.gif" alt="Loading..." />
     </div>
-
-
-
     <!-- <div class="loader"></div> -->
-
-
-
-
     <style>
         #codepro-ads-left {
             bottom: 24px;
@@ -264,10 +183,6 @@
                     alt="Quảng Cáo Fake" width="260px"></a>
         </div>
     </div>
-
-
-
-
     <script src="https://app.tudongchat.com/js/chatbox.js"></script>
     <script>
         const tudong_chatbox = new TuDongChat('mqQ1F_-6sVCznyLoLPEAD')
@@ -285,31 +200,14 @@
             thường. ⭐</h3>
     </marquee>
 
-    <div class="codepro-trungthu-left">
-        <!-- <a href="#">
-            <img alt="Trang trí đón trung thu cho blog/website bằng hình ảnh cành hoa, mặt trăng, lồng đèn và rước đèn"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDRQDNRDJSlZRrIKuZRomBtjjivs-t1jfwB6IkfhvQKmELLo39koAHruvvI8AbA36-9RS9kfmmFhRS7fkUrw3WyDaPnOdaaQJD_2O9hha27XTfL1AXaa6eQzPwcSXGJYSDh3tjOxxqIjjg/s0/canh-hoa-long-den-trung-thu.png" />
-        </a> -->
-    </div>
-    <div class="codepro-trungthu-right">
-        <!-- <a href="#">
-            <img alt="Trang trí đón trung thu cho blog/website bằng hình ảnh cành hoa, mặt trăng, lồng đèn và rước đèn"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiw6yXD0rFuvZkHIkxbuOnoa79ka3vPpJcf1xiyDFKBTAbhwCrGnRRZWrGIYURFqO-f5dSLLfJYTcDix5QYdk2eMXzShs4RMX4s27Maq6qnyhVE7KDl72Cs8p_tS_PxjDA-8e1QziNUBhZW/s0/mat-trang-long-den-trung-thu.png" />
-        </a> -->
-    </div>
-    <div class="codepro-trungthu-bottom">
-        <!-- <a href="#">
-            <img alt="Trang trí đón trung thu cho blog/website bằng hình ảnh cành hoa, mặt trăng, lồng đèn và rước đèn"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin1CJgORKie1yLvYVC3U8v7pL3Q5xMwchSkN9c0xaVLaRIFzyPzqXVM_dwFH_pAPLz_sPH7p6dUVqWKdnja7rhBQxY4r6ZaG7id6ZBf1FxmhQbSPJDo4oAPJ4F_VA0tbEvQxu93rm78FsX/s0/ruoc-den-trung-thu.png" />
-        </a> -->
-    </div>
+
     <div id="warpper">
         <div id="header">
-            <h1>Xin Chào ! </h1>
-            <h4>Chào mừng bạn đã đến với sách mê 📖</h4>
+            <h1 data-aos="fade-right" data-aos-duration="2000">Xin Chào ! </h1>
+            <h4 data-aos="fade-right" data-aos-duration="2000">Chào mừng bạn đã đến với sách mê 📖</h4>
         </div>
         <div id="bar">
-            <ul>
+            <ul data-aos="fade-left" data-aos-duration="2000">
                 <li>
                     <a href="./index.html">
                         <button>
@@ -318,34 +216,35 @@
                     </a>
                 </li>
                 <li class="dropdown">
-                    <button class="dropbtn">
-                        <i class="bi bi-book" style="padding: 5px;"></i>Sách
-                    </button>
+                    <a href="#">
+                        <button class="dropbtn">
+                            <i class="bi bi-book" style="padding: 5px;"></i>Văn Học
+                        </button>
+                    </a>
                     <div class="dropdown-content">
-                        <a href="#">Văn Học</a>
-                        <a href="#">Khoa Học</a>
-                        <a href="#">Chuyên Ngành</a>
-                        <a href="#">Kỹ Năng Sống</a>
+                        <a href="vanhocnuocngoai.html">Văn Học Nước Ngoài</a>
+                        <a href="vanhocvietnam.html">Văn Học Việt Nam</a>
                     </div>
                 </li>
-
-                <li><a href="./thongtin.html"><button><i class="bi bi-info-circle-fill" style="padding: 5px;"></i>Thông
-                            Tin</button></a></li>
-                <!-- <li>
-                    <a class="toggle-btn" href="./hd.html"><button><i class="bi bi-filetype-pdf"
-                                style="padding: 5px;"></i>Cách Xem File PDF</button></a>
-                </li> -->
+                <li class="dropdown">
+                    <a href="./gopy.html">
+                        <button class="dropbtn">
+                            <i class="bi bi-chat-left-text-fill" style="padding: 5px;"></i>Góp ý
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="thongtin.html"><button><i class="bi bi-info-circle-fill" style="padding: 5px;"></i>Thông
+                            Tin</button></a>
+                </li>
                 <li>
                     <button id="theme-star-toggle" class="theme-toggle"><i class="bi bi-emoji-smile-fill"
-                            style="padding: 5px;"></i>Chế Độ Bí Ẩn</button>
-
+                            style="padding: 5px;"></i>Chế Độ Sáng | Tối</button>
                     <script>
                         const themeStarToggle = document.getElementById("theme-star-toggle");
-
                         themeStarToggle.addEventListener("click", () => {
                             // Chuyển đổi chế độ tối
                             document.body.classList.toggle("dark-mode");
-
                             // Hiển thị hoặc ẩn ngôi sao khi bật/tắt chế độ tối
                             const stars = document.getElementById("stars");
                             const stars2 = document.getElementById("stars2");
@@ -365,19 +264,13 @@
                         });
                     </script>
                 </li>
-
-
-
-
             </ul>
         </div>
-
-
         <div id="main-content">
-            <div id="content">
-                <h3 style="padding-bottom: 5px; padding-left: 30px;">Sách nước ngoài<a href=""
-                        style="padding-left: 400px;">Xem Thêm
-                    </a></h3>
+            <div id="content" data-aos="fade-up" data-aos-duration="2000">
+                <h3 style="padding-bottom: 5px; padding-left: 30px;"><a href="./vanhocnuocngoai.html"
+                        style="color: rgb(71, 71, 71); text-decoration: none;">Sách nước
+                        ngoài</a></h3>
                 <hr style="padding-bottom: 5px;" color="red">
                 <div class="book-list" style="padding-top: 20px;">
                     <div class="book-item">
@@ -431,7 +324,7 @@
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/tncd/tncd.html">
-                            <img src="https://cdn0.fahasa.com/media/catalog/product/t/r/tram_nam_co_don-01.jpg" alt="Trăm Năm Cô Đơn" title="Trăm Năm Cô Đơn">
+                            <img src="BaiDang/tncd/tncd.jpg" alt="Trăm Năm Cô Đơn" title="Trăm Năm Cô Đơn">
                         </a>
                         <a href="BaiDang/tncd/tncd.html" class="read-button">Đọc Ngay</a>
                     </div>
@@ -441,9 +334,8 @@
 
                 <!-- ========================================================================================= -->
 
-                <h3 style="padding-bottom: 5px; padding-top: 30px; padding-left: 30px;">Sách Việt Nam
-                    <a href="" style="padding-left: 400px;">Xem Thêm</a>
-                </h3>
+                <h3 style="padding-bottom: 5px; padding-top: 10px; padding-left: 30px;"><a href="./vanhocvietnam.html"
+                        style="color: rgb(71, 71, 71); text-decoration: none;">Sách Việt Nam</a></h3>
                 <hr style="padding-bottom: 5px;" color="red">
                 <div class="book-list" style="padding-top: 20px;">
                     <div class="book-item">
@@ -469,7 +361,7 @@
                     </div>
                     <div class="book-item">
                         <a href="BaiDang/bc/bc.html">
-                            <img src="https://www.khaitam.com/Data/Sites/1/Product/4493/bo-chong.jpg" alt="Bỏ Chồng" title="Bỏ Chồng">
+                            <img src="BaiDang/bc/bc.jpg" alt="Bỏ Chồng" title="Bỏ Chồng">
                         </a>
                         <a href="BaiDang/bc/bc.html" class="read-button">Đọc Ngay</a>
                     </div>
@@ -510,5 +402,36 @@
             <br>
             <p>Một Sản Phẩm của Trần Hoàng Thứ</p>
         </div>
+        <div id="login-popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close" id="close-popup">❌</span>
+                <h3>Bạn ơi, có thể cho sách mê biết tên và tuổi của bạn được không 🤔</h3>
+                <form id="login-form">
+                    <label for="username">Tên:</label>
+                    <input type="text" id="username" required style="padding: 5px;">
+                    <label for="age">Tuổi:</label>
+                    <input type="number" id="age" required style="padding: 5px;">
+                    <button type=" submit" style="color: red; font-size: 14px; background-color: white;">Gửi</button>
+                </form>
+                <button id="guest-btn" style="color: rgb(42, 131, 255); background-color: rgb(255, 255, 255);">Tiếp tục
+                    với tư cách Khách</button>
+            </div>
+        </div>
+        <div id="user-info" class="user-info hidden">
+            <p id="user-greeting"></p>
+        </div>
+
+
+        <div id="notification" class="notification hidden" data-aos-duration="900" data-aos="fade-right">
+            <p>🔔 Nhấn vào đây đi !</p>
+        </div>
+        <link rel="stylesheet" href="login.css">
+        <script src="./login.js"></script>
+
+        <script src="./aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
+
 </html>
