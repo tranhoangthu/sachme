@@ -1,7 +1,7 @@
 # 📚 Sách Mê - Thư Viện Sách Online
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/tranhoangthu/hinhanhwebsachme/main/hoangtube.webp" alt="Sách Mê Logo" width="200"/>
+  <img src="https://raw.githubusercontent.com/tranhoangthu/sachme/refs/heads/main/LOGO.jpg" alt="Sách Mê Logo" width="200"/>
   
   [Xem Website](https://tranhoangthu.github.io/sachme/) | [Báo Lỗi](https://github.com/tranhoangthu/sachme/issues) | [Đóng Góp](https://github.com/tranhoangthu/sachme/pulls)
 </div>
