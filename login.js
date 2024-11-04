@@ -30,12 +30,18 @@ document.addEventListener("DOMContentLoaded", function () {
     loginForm.onsubmit = function (event) {
         event.preventDefault();
         const username = document.getElementById("username").value;
-        const age = document.getElementById("age").value;
+        const birthYear = document.getElementById("birth-year").value;
+
+        // Tính tuổi dựa trên năm hiện tại
+        const currentYear = new Date().getFullYear();
+        const age = currentYear - birthYear;
+
         userGreeting.textContent = `Chào ${username}, bạn ${age} tuổi!`;
         userInfo.classList.remove("hidden");
         notification.classList.add("hidden");
         popup.style.display = "none";
     }
+
 
     // Tiếp tục với tư cách Khách
     guestBtn.onclick = function () {
