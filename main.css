@@ -379,7 +379,7 @@ button {
 
 }
 
-.dark-mode #content.h3 {
+.dark-mode #content.h3.a {
     color: rgb(255, 255, 255)
 }
 
