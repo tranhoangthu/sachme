@@ -89,7 +89,7 @@ html {
     border-radius: 50px;
     background: linear-gradient(-270deg, #ff994f, #fa6d86);
     cursor: pointer;
-    transition: ease-in 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 .contact-left button img {
@@ -97,7 +97,7 @@ html {
 }
 
 .contact-left button:hover {
-
+    transition: ease-in-out 0.5s;
     background: linear-gradient(270deg, #ff994f, #fa6d86);
 }
 
