@@ -379,10 +379,8 @@ button {
 
 }
 
-
-
-#starstoggle {
-    display: none;
+.dark-mode #content.h3 {
+    color: rgb(255, 255, 255)
 }
 
 
